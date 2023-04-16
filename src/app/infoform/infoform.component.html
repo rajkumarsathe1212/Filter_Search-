@@ -1,0 +1,24 @@
+
+<div class="row mt-4">
+
+  <h3>Student Information</h3>
+
+  <form [formGroup]="formdata" (ngSubmit)="submit(formdata.value)">
+
+    <div class="col-lg-6">
+      <label for="">Enter Name</label>
+      <input type="text" placeholder="Enter Name" class="form-control" formControlName="name">
+    </div>
+
+    <div class="col-lg-6">
+      <label for="">Enter Sirname</label>
+      <input type="text" placeholder="Enter Sirname" class="form-control" formControlName="sirname">
+    </div>
+
+    <div class="mt-3">
+      <input type="submit"  class="btn btn-success" value="Submit">
+      <input type="button" class="btn btn-danger ms-2" value="Cancel" routerLink="/table">
+    </div>
+
+  </form>
+</div>
